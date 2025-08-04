@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <style>
+    * {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url("360_F_819636263_By4Yh4LWNcJCHYBu7EbLxbw3BjXENyHt.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-item {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #5b9bd5;
+      box-shadow: 0 0 5px #5b9bd5;
+    }
+
+    #gender {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #gender label {
+      width: auto;
+    }
+
+    #gender div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #button {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #4e1fe2, #6b5be2);
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #3a0cc2, #5340d2);
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .link-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .link-text a {
+      color: #4e1fe2;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="">
+      <h2>SIGNUP</h2>
+
+      <div class="form-item">
+        <label for="fistname">Firstname</label>
+        <input type="text" id="firstname" />
+      </div>
+
+      <div class="form-item">
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" />
+      </div>
+
+      <div class="form-item">
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+      </div>
+
+      <div class="form-item">
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div class="form-item">
+        <label for="email">Email</label>
+        <input type="email" id="firstname" />
+      </div>
+
+      <div class="form-item" id="gender">
+        <label for="gender">Gender</label>
+        <div><input type="radio" name="gender" /> Male</div>
+        <div><input type="radio" name="gender" /> Female</div>
+      </div>
+
+      <div class="form-item" id="button">
+        <button><a href="login.html">SIGNUP</a></button>
+        <button><a href="#">CANCEL</a></button>
+      </div>
+
+      <div class="link-text">
+        <a href="login.html">Already have an account? Log in</a>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>

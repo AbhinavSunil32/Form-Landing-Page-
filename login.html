@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            box-sizing: border-box;
+            color: blue;
+            padding: 0px;
+            margin: 0px;
+        }
+        .form-container{
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: linear-gradient(to bottom left,blue,white,blue);
+            background-image: url("360_F_819636263_By4Yh4LWNcJCHYBu7EbLxbw3BjXENyHt.jpg");
+            background-size: cover;
+        }
+        
+        form{
+            padding: 2px;
+            width: 400px;
+            background-color: white;
+        }
+        .form-item{
+            padding: 1px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        label{
+            margin-bottom: 2px;;
+            display: block;
+            text-align: start;
+            width: 100%;
+
+            }
+        input{
+            width: 100%;
+            padding: 2px;
+            border-radius: 10px;
+        }
+        #gender{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 250px;
+            flex-direction: row;
+        }
+        #gender div{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+    }
+        #button{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        button{
+            padding: 15px;
+            width:100%;
+            margin-bottom: 10px;
+            background: rgb(78, 15, 226);
+            background-image: linear-gradient();
+            border: 0px;
+            border-radius: 10px;
+            color: white;
+            animation-name: aaa;
+            animation-timing-function:linear;
+            animation-duration: 4s;
+            animation-iteration-count: infinite
+        }
+        a{
+            text-decoration: none;
+            color: rgb(8, 1, 1);
+            
+        }
+
+        @keyframes aaa{
+            0%{
+                background-color: aqua;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            25%{
+                background-color: blue;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            50%{
+                background-color: rgb(165, 165, 245);
+                font-style: italic;
+            }
+            100%{
+                background-color: darkcyan;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <h2 style="text-align: center;">LOGIN</h2>
+             <div class="form-item">
+                <label for="username">username</label>
+                <input type="text" id="username">
+            </div>
+             <div class="form-item">
+                <label for="password">password</label>
+                <input type="password" id="password">
+            </div>
+             <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="firstname">
+            </div>
+            <div class="form-item" id="button">
+            <button><a href="home.html">LOGIN</a></button>
+            <button><a href="">Cancel</a></button>
+            <a href="index.html">Dont have an account</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
